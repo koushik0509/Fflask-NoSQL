@@ -58,32 +58,22 @@ cd app
 
 If running locally without Docker, set up a virtual environment and install dependencies:
 
-bash
-Copy code
-python3 -m venv venv
-source venv/bin/activate
-pip install -r app/requirements.txt
-Run with Docker:
+python3 -m venv venv<br/>
+source venv/bin/activate<br/>
+pip install -r app/requirements.txt<br/>
+Run with Docker:<br/>
 
-Build and start the containers using Docker Compose:
-
-bash
-Copy code
-docker-compose up --build
-This will start the Flask app and MongoDB services.
+Build and start the containers using Docker Compose:<br/>
+docker-compose up --build<br/>
+This will start the Flask app and MongoDB services.<br/>
 
 ### Data Ingestion:
-
 Use the provided DataReader.py script to load the data into MongoDB:
 
-bash
-Copy code
-python app/load/DataReader.py --file app/load/resources/correct_twitter_201904.tsv
+python app/load/DataReader.py --file app/load/resources/correct_twitter_201904.tsv<br/>
 Alternatively, if using Docker:
 
-bash
-Copy code
-docker exec -it flask_app python app/load/DataReader.py --file app/load/resources/correct_twitter_201904.tsv
+docker exec -it flask_app python app/load/DataReader.py --file app/load/resources/correct_twitter_201904.tsv<br/>
 Querying the Data
 Available Endpoints
 Search Tweets by Term:
