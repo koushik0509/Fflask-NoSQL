@@ -80,12 +80,12 @@ Returns statistics and information about tweets containing the specified term.
 Query Results
 For a given search term, the API returns:
 
-1. Number of tweets containing the term on each day.
-2. Number of unique users who posted tweets with the term.
-3. Average likes for tweets containing the term.
-4. Locations (place IDs) where tweets originated.
-5. Times of day when the tweets were posted.
-6. The user who posted the most tweets with the term.
+1. Number of tweets containing the term on each day. - http://localhost:8080/tweets_by_day?term=music
+2. Number of unique users who posted tweets with the term. - http://localhost:8080/unique_users?term=music
+3. Average likes for tweets containing the term. - http://localhost:8080/average_likes?term=music
+4. Locations (place IDs) where tweets originated. - http://localhost:8080/places?term=music
+5. Times of day when the tweets were posted. - http://localhost:8080/times_of_day?term=music
+6. The user who posted the most tweets with the term. - 
 7. Testing
 8. Run tests using pytest to ensure that data ingestion and queries work correctly:
 
