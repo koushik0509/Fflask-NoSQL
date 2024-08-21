@@ -4,26 +4,26 @@ This project is part of the IDI Take-Home assignment designed to evaluate the ab
 
 ## Project Structure
 
-Flask-NoSQL/
-│\n
-├── app/
-│ ├── run.py # Flask application
-│ ├── init.py # Initialize the Flask app
-│ ├── routes.py # Functions to handle data queries
-│ ├── requirements.txt # List of Python dependencies
-│ └── Dockerfile # Dockerfile for building the Flask app container
-│ ├── docker-compose.yml # Docker Compose file to manage the services
-│ ├── load/
-│ │ ├── DataReader.py # Script for data ingestion into MongoDB
-│ │ └── resources/
-│ │ └── correct_twitter_201904.tsv # Input Data
-│
-├── tests/
-│ ├── test_ingestion.py # Unit tests for data ingestion
-│ └── test_queries.py # Unit tests for query functions
-├── README.md # Project documentation
-└── images/
-└── architecture_diagram.png # Architecture diagram
+Flask-NoSQL
+│<br/>
+├── app/<br/>
+│ ├── run.py # Flask application<br/>
+│ ├── init.py # Initialize the Flask app<br/>
+│ ├── routes.py # Functions to handle data queries<br/>
+│ ├── requirements.txt # List of Python dependencies<br/>
+│ └── Dockerfile # Dockerfile for building the Flask app container<br/>
+│ ├── docker-compose.yml # Docker Compose file to manage the services<br/>
+│ ├── load/<br/>
+│ │ ├── DataReader.py # Script for data ingestion into MongoDB<br/>
+│ │ └── resources/<br/>
+│ │ └── correct_twitter_201904.tsv # Input Data<br/>
+│<br/>
+├── tests/<br/>
+│ ├── test_ingestion.py # Unit tests for data ingestion<br/>
+│ └── test_queries.py # Unit tests for query functions<br/>
+├── README.md # Project documentation<br/>
+└── images/<br/>
+└── architecture_diagram.png # Architecture diagram<br/>
 
 
 ## Setup and Installation
