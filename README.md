@@ -2,6 +2,21 @@
 ### Overview
 This project is part of the IDI Take-Home assignment designed to evaluate the ability to handle a large dataset, package it into a queryable structure, and build a system that can efficiently perform specific queries. The project is implemented using Python, Flask, MongoDB, and Docker. The task is open-ended, and while it's not necessary to complete it fully, the focus is on demonstrating problem-solving skills, attention to detail, and effective documentation.
 
+### Architecture
+![Architecture Diagram](https://github.com/koushik0509/Fflask-NoSQL/blob/main/app/images/architecture_diagram.png)
+
+The architecture consists of:
+
+- Flask API: Handles client requests and queries data from MongoDB.
+- MongoDB: Stores the tweet data and allows for efficient querying.
+- Docker: Containerizes the Flask app and MongoDB, ensuring consistent deployment.
+- PyCharm: Used for development and debugging.
+### Design Choices
+- MongoDB: Chosen for its ability to efficiently handle large datasets and complex queries.
+- Flask: Lightweight and easy to set up for building RESTful APIs.
+- Docker: Ensures the application runs consistently across different environments.
+- Testing: Implemented with pytest to validate functionality and data integrity.
+
 ## Project Structure
 
 Flask-NoSQL
@@ -95,19 +110,6 @@ For a given search term, the API returns:
 bash
 Copy code
 pytest tests/
-Architecture
-
-The architecture consists of:
-
-- Flask API: Handles client requests and queries data from MongoDB.
-- MongoDB: Stores the tweet data and allows for efficient querying.
-- Docker: Containerizes the Flask app and MongoDB, ensuring consistent deployment.
-- PyCharm: Used for development and debugging.
-### Design Choices
-- MongoDB: Chosen for its ability to efficiently handle large datasets and complex queries.
-- Flask: Lightweight and easy to set up for building RESTful APIs.
-- Docker: Ensures the application runs consistently across different environments.
-- Testing: Implemented with pytest to validate functionality and data integrity.
   
 #### Usage Instructions
 Clone the repository and follow the installation steps.
