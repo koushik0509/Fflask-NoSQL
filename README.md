@@ -1,8 +1,8 @@
-#IDI Take-Home Task
-###Overview
+#I DI Take-Home Task
+### Overview
 This project is part of the IDI Take-Home assignment designed to evaluate the ability to handle a large dataset, package it into a queryable structure, and build a system that can efficiently perform specific queries. The project is implemented using Python, Flask, MongoDB, and Docker. The task is open-ended, and while it's not necessary to complete it fully, the focus is on demonstrating problem-solving skills, attention to detail, and effective documentation.
 
-##Project Structure
+## Project Structure
 plaintext
 Copy code
 Flask-NoSQL/
@@ -27,20 +27,20 @@ Flask-NoSQL/
 │   ├── architecture_diagram.png  # Architecture diagram
 
 
-##Setup and Installation
+## Setup and Installation
 Prerequisites
 - Python 3.8+
 - Docker and Docker Compose
 - MongoDB (if not using Docker)
 - PyCharm (recommended IDE)
-###Installation
+### Installation
 Clone the Repository:
 
 bash
 Copy code
 git clone https://github.com/koushik0509/Flask-NoSQL.git
 cd app
-####Install Python Dependencies:
+#### Install Python Dependencies:
 
 If running locally without Docker, set up a virtual environment and install dependencies:
 
