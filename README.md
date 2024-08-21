@@ -85,7 +85,7 @@ For a given search term, the API returns:
 3. Average likes for tweets containing the term. - http://localhost:8080/average_likes?term=music
 4. Locations (place IDs) where tweets originated. - http://localhost:8080/places?term=music
 5. Times of day when the tweets were posted. - http://localhost:8080/times_of_day?term=music
-6. The user who posted the most tweets with the term. - 
+6. The user who posted the most tweets with the term. - http://localhost:8080/top_user?term=music
 7. Testing
 8. Run tests using pytest to ensure that data ingestion and queries work correctly:
 
