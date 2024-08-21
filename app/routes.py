@@ -12,7 +12,7 @@ main = Blueprint('main', __name__)
 def tweets_by_day():
     term = request.args.get('term', '')
     pipeline = [
-        {"$match": {"text": {"$regex": "spears", "$options": "i"}}},
+        {"$match": {"text": {"$regex": term, "$options": "i"}}},
         {"$group": {"_id": {"$substr": ["$created_at", 0, 10]}, "count": {"$sum": 1}}}
     ]
     result = list(current_app.mongo.db.tweets.aggregate(pipeline))
