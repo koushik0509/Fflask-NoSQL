@@ -49,42 +49,34 @@ Prerequisites
 - PyCharm (recommended IDE)
 ### Installation
 Clone the Repository:
-
-bash
-Copy code
-git clone https://github.com/koushik0509/Fflask-NoSQL.git
+- git clone https://github.com/koushik0509/Fflask-NoSQL.git
 cd app
 #### Install Python Dependencies:
-
 If running locally without Docker, set up a virtual environment and install dependencies:
+1. python3 -m venv venv<br/>
+2. source venv/bin/activate<br/>
+3. pip install -r app/requirements.txt<br/>
 
-python3 -m venv venv<br/>
-source venv/bin/activate<br/>
-pip install -r app/requirements.txt<br/>
-Run with Docker:<br/>
-
+### Run with Docker:<br/>
 Build and start the containers using Docker Compose:<br/>
-docker-compose up --build<br/>
+- docker-compose up --build<br/>
 This will start the Flask app and MongoDB services.<br/>
 
 ### Data Ingestion:
 Use the provided DataReader.py script to load the data into MongoDB:
+- python app/load/DataReader.py --file app/load/resources/correct_twitter_201904.tsv<br/>
 
-python app/load/DataReader.py --file app/load/resources/correct_twitter_201904.tsv<br/>
 Alternatively, if using Docker:
+- docker exec -it flask_app python app/load/DataReader.py --file app/load/resources/correct_twitter_201904.tsv<br/>
 
-docker exec -it flask_app python app/load/DataReader.py --file app/load/resources/correct_twitter_201904.tsv<br/>
-Querying the Data
+## Querying the Data
 Available Endpoints
 Search Tweets by Term:
 
-GET /search?term=music
+GET /places?term=music
 Returns statistics and information about tweets containing the specified term.
 #### Example Query:
-
-bash
-Copy code
-curl http://localhost:8080/search?term=music
+- curl http://localhost:8080/search?term=music
 Query Results
 For a given search term, the API returns:
 
@@ -97,8 +89,6 @@ For a given search term, the API returns:
 7. Testing
 8. Run tests using pytest to ensure that data ingestion and queries work correctly:
 
-bash
-Copy code
 pytest tests/
   
 #### Usage Instructions
