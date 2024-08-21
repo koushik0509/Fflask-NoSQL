@@ -3,28 +3,27 @@
 This project is part of the IDI Take-Home assignment designed to evaluate the ability to handle a large dataset, package it into a queryable structure, and build a system that can efficiently perform specific queries. The project is implemented using Python, Flask, MongoDB, and Docker. The task is open-ended, and while it's not necessary to complete it fully, the focus is on demonstrating problem-solving skills, attention to detail, and effective documentation.
 
 ## Project Structure
-plaintext
-Copy code
+
 Flask-NoSQL/
-│
+│\n
 ├── app/
-│   ├── run.py               # Flask application
-│   ├── __intit__.py         #Intitalise
-│   ├── routes.py            # Functions to handle data queries
-│   ├── requirements.txt     # List of Python dependencies
-│   └── Dockerfile           # Dockerfile for building the Flask app container
-|   ├── docker-compose.yml       # Docker Compose file to manage the services
-│   ├──load
-│   ├──├── DataRreader.py         # Script for data ingestion into MongoDB 
-├   ├──├──resources/
-│   ├--├────├── correct_twitter_201904.tsv #Input Data
+│ ├── run.py # Flask application
+│ ├── init.py # Initialize the Flask app
+│ ├── routes.py # Functions to handle data queries
+│ ├── requirements.txt # List of Python dependencies
+│ └── Dockerfile # Dockerfile for building the Flask app container
+│ ├── docker-compose.yml # Docker Compose file to manage the services
+│ ├── load/
+│ │ ├── DataReader.py # Script for data ingestion into MongoDB
+│ │ └── resources/
+│ │ └── correct_twitter_201904.tsv # Input Data
 │
 ├── tests/
-│   ├── test_ingestion.py    # Unit tests for data ingestion
-│   └── test_queries.py      # Unit tests for query functions
-├── README.md                # Project documentation
-└── images
-│   ├── architecture_diagram.png  # Architecture diagram
+│ ├── test_ingestion.py # Unit tests for data ingestion
+│ └── test_queries.py # Unit tests for query functions
+├── README.md # Project documentation
+└── images/
+└── architecture_diagram.png # Architecture diagram
 
 
 ## Setup and Installation
@@ -114,7 +113,7 @@ The architecture consists of:
 Clone the repository and follow the installation steps.
 Use the provided endpoints to query the data.
 Refer to the Dockerfile and docker-compose.yml for setting up the environment.
-####3 Conclusion
-This project demonstrates the ability to ingest and query large datasets, with an emphasis on code quality, documentation, and performance. For any questions, please contact me at kokoushik.sama9@gmail.com with [IDI TAKE-HOME] in the subject line.
+#### Conclusion
+This project demonstrates the ability to ingest and query large datasets, with an emphasis on code quality, documentation, and performance. For any questions, please contact me at koushik.sama9@gmail.com with [IDI TAKE-HOME] in the subject line.
 
 Feel free to customize the README file to match your project specifics, such as file names or additional instructions.
