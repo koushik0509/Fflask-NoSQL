@@ -58,7 +58,7 @@ Copy code
 docker-compose up --build
 This will start the Flask app and MongoDB services.
 
-Data Ingestion:
+### Data Ingestion:
 
 Use the provided DataReader.py script to load the data into MongoDB:
 
@@ -76,7 +76,7 @@ Search Tweets by Term:
 
 GET /search?term=music
 Returns statistics and information about tweets containing the specified term.
-Example Query:
+#### Example Query:
 
 bash
 Copy code
@@ -84,14 +84,14 @@ curl http://localhost:8080/search?term=music
 Query Results
 For a given search term, the API returns:
 
-Number of tweets containing the term on each day.
-Number of unique users who posted tweets with the term.
-Average likes for tweets containing the term.
-Locations (place IDs) where tweets originated.
-Times of day when the tweets were posted.
-The user who posted the most tweets with the term.
-Testing
-Run tests using pytest to ensure that data ingestion and queries work correctly:
+1. Number of tweets containing the term on each day.
+2. Number of unique users who posted tweets with the term.
+3. Average likes for tweets containing the term.
+4. Locations (place IDs) where tweets originated.
+5. Times of day when the tweets were posted.
+6. The user who posted the most tweets with the term.
+7. Testing
+8. Run tests using pytest to ensure that data ingestion and queries work correctly:
 
 bash
 Copy code
@@ -100,20 +100,21 @@ Architecture
 
 The architecture consists of:
 
-Flask API: Handles client requests and queries data from MongoDB.
-MongoDB: Stores the tweet data and allows for efficient querying.
-Docker: Containerizes the Flask app and MongoDB, ensuring consistent deployment.
-PyCharm: Used for development and debugging.
-Design Choices
-MongoDB: Chosen for its ability to efficiently handle large datasets and complex queries.
-Flask: Lightweight and easy to set up for building RESTful APIs.
-Docker: Ensures the application runs consistently across different environments.
-Testing: Implemented with pytest to validate functionality and data integrity.
-Usage Instructions
+- Flask API: Handles client requests and queries data from MongoDB.
+- MongoDB: Stores the tweet data and allows for efficient querying.
+- Docker: Containerizes the Flask app and MongoDB, ensuring consistent deployment.
+- PyCharm: Used for development and debugging.
+### Design Choices
+- MongoDB: Chosen for its ability to efficiently handle large datasets and complex queries.
+- Flask: Lightweight and easy to set up for building RESTful APIs.
+- Docker: Ensures the application runs consistently across different environments.
+- Testing: Implemented with pytest to validate functionality and data integrity.
+  
+#### Usage Instructions
 Clone the repository and follow the installation steps.
 Use the provided endpoints to query the data.
 Refer to the Dockerfile and docker-compose.yml for setting up the environment.
-Conclusion
-This project demonstrates the ability to ingest and query large datasets, with an emphasis on code quality, documentation, and performance. For any questions, please contact Alyssa at smith.alyss@northeastern.edu with [IDI TAKE-HOME] in the subject line.
+####3 Conclusion
+This project demonstrates the ability to ingest and query large datasets, with an emphasis on code quality, documentation, and performance. For any questions, please contact me at kokoushik.sama9@gmail.com with [IDI TAKE-HOME] in the subject line.
 
 Feel free to customize the README file to match your project specifics, such as file names or additional instructions.
