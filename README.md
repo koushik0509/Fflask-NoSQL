@@ -52,7 +52,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/koushik0509/Flask-NoSQL.git
+git clone https://github.com/koushik0509/Fflask-NoSQL.git
 cd app
 #### Install Python Dependencies:
 
