@@ -96,6 +96,4 @@ Clone the repository and follow the installation steps.
 Use the provided endpoints to query the data.
 Refer to the Dockerfile and docker-compose.yml for setting up the environment.
 #### Conclusion
-This project demonstrates the ability to ingest and query large datasets, with an emphasis on code quality, documentation, and performance. For any questions, please contact me at koushik.sama9@gmail.com with [IDI TAKE-HOME] in the subject line.
-
-Feel free to customize the README file to match your project specifics, such as file names or additional instructions.
+This project demonstrates the ability to ingest and query large datasets, with an emphasis on code quality, documentation, and performance.
